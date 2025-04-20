@@ -58,7 +58,7 @@ function addTask() {
   }
 
   if (tasks.includes(newTask)) {
-    alert("Task already exists!");
+    alert("Task already exists. Please add a different task.");
   } else {
     tasks.push(newTask);
     localStorage.setItem("storedTasks", JSON.stringify(tasks));
